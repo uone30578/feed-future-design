@@ -52,6 +52,24 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				eco: {
+					light: 'hsl(var(--eco-light))',
+					medium: 'hsl(var(--eco-medium))',
+					dark: 'hsl(var(--eco-dark))'
+				},
+				food: {
+					light: 'hsl(var(--food-light))',
+					medium: 'hsl(var(--food-medium))',
+					dark: 'hsl(var(--food-dark))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +102,55 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateY(100%)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'bounce-soft': {
+					'0%, 100%': {
+						transform: 'translateY(0)',
+						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)',
+						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'slide-up': 'slide-up 0.6s ease-out',
+				'bounce-soft': 'bounce-soft 2s infinite'
+			},
+			backgroundImage: {
+				'gradient-eco': 'var(--gradient-eco)',
+				'gradient-food': 'var(--gradient-food)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'eco': 'var(--shadow-eco)',
+				'food': 'var(--shadow-food)',
+				'soft': 'var(--shadow-soft)'
 			}
 		}
 	},

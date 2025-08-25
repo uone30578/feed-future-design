@@ -9,25 +9,51 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 142 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 142 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 142 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 68% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 85% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 142 15% 95%;
+    --muted-foreground: 142 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 40% 88%;
+    --accent-foreground: 142 20% 15%;
+
+    /* Custom theme colors */
+    --success: 142 68% 35%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 25 85% 55%;
+    --warning-foreground: 0 0% 100%;
+    
+    --eco-light: 142 45% 92%;
+    --eco-medium: 142 35% 65%;
+    --eco-dark: 142 55% 25%;
+    
+    --food-light: 25 75% 85%;
+    --food-medium: 25 80% 65%;
+    --food-dark: 25 85% 45%;
+
+    /* Gradients */
+    --gradient-eco: linear-gradient(135deg, hsl(var(--success)), hsl(var(--eco-medium)));
+    --gradient-food: linear-gradient(135deg, hsl(var(--warning)), hsl(var(--food-medium)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--eco-light)), hsl(var(--food-light)));
+
+    /* Shadows */
+    --shadow-eco: 0 10px 30px -10px hsl(var(--success) / 0.3);
+    --shadow-food: 0 10px 30px -10px hsl(var(--warning) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,26 +82,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 142 15% 8%;
+    --foreground: 142 15% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 142 15% 10%;
+    --card-foreground: 142 15% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 142 15% 10%;
+    --popover-foreground: 142 15% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 55% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 75% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 142 15% 15%;
+    --muted-foreground: 142 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 142 15% 20%;
+    --accent-foreground: 142 15% 95%;
+
+    /* Custom theme colors for dark mode */
+    --success: 142 55% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 25 75% 55%;
+    --warning-foreground: 0 0% 100%;
+    
+    --eco-light: 142 25% 25%;
+    --eco-medium: 142 35% 35%;
+    --eco-dark: 142 45% 15%;
+    
+    --food-light: 25 65% 25%;
+    --food-medium: 25 70% 35%;
+    --food-dark: 25 75% 45%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
