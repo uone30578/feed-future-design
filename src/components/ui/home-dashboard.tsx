@@ -80,10 +80,10 @@ export const HomeDashboard = ({ onNavigate }: HomeDashboardProps) => {
             </div>
           </div>
           <div className="flex space-x-3">
-            <Button size="icon" variant="outline" className="rounded-full">
+            <Button size="icon" variant="outline" className="rounded-full" onClick={() => onNavigate('notifications')}>
               <Bell className="w-5 h-5" />
             </Button>
-            <Button size="icon" variant="outline" className="rounded-full">
+            <Button size="icon" variant="outline" className="rounded-full" onClick={() => onNavigate('profile')}>
               <User className="w-5 h-5" />
             </Button>
           </div>
@@ -108,8 +108,8 @@ export const HomeDashboard = ({ onNavigate }: HomeDashboardProps) => {
             <div>
               <h3 className="text-xl font-bold mb-2">Save Food, Save Money! 🌱</h3>
               <p className="text-sm opacity-90 mb-3">Get surplus food at 50% off</p>
-              <Button variant="secondary" size="sm">
-                Order Now
+              <Button variant="secondary" size="sm" onClick={() => onNavigate('donations')}>
+                Donate Now
               </Button>
             </div>
             <div className="text-6xl">🥘</div>
@@ -125,7 +125,7 @@ export const HomeDashboard = ({ onNavigate }: HomeDashboardProps) => {
                 key={index}
                 variant="outline"
                 className="flex flex-col h-20 p-3 rounded-xl shadow-soft hover:shadow-eco transition-all"
-                onClick={() => onNavigate('restaurants')}
+                onClick={() => onNavigate('donations')}
               >
                 <div className={`w-8 h-8 rounded-lg ${category.color} flex items-center justify-center mb-2`}>
                   <category.icon className="w-4 h-4 text-white" />
